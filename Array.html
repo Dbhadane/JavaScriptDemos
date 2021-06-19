@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            var arr=[90,20,10,40,0,4,20,10,20];
+            document.write("<h2>Array Operations</h2>");
+            document.write("Array elements-->["+arr.toString()+"]<br>");
+
+            for(var i=0;i<arr.length;i++)
+            {
+                for(var j=0;j<arr.length;j++)
+                {
+                    if(arr[i]>arr[j])
+                    {
+                        var t=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=t;
+                    }
+                }
+            }
+            document.write("Sorted Array in decending order-->["+arr.toString()+"]<br>");
+            document.write("Decending order->[");
+            for(var i=arr.length-1;i>0;i--)
+            {
+                document.write(arr[i]+",");
+            }
+           document.write("]<br>");
+        document.write("pop and push operation");
+        arr.pop();
+        document.write("<br> After pop <br>");
+        document.write(arr.toString());
+        arr.push(0);
+        document.write("<br> After push <br>");
+        document.write(arr.toString());
+
+        document.write("<br> last index of="+arr.lastIndexOf(20));
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

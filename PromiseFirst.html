@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            const mypromise=function(){
+               
+                return new Promise(function(resolve,reject)
+                {
+                    var n1=4;
+                    if(n1%2==0)
+                    {
+                       resolve(ss(n1));
+                    }
+                   else
+                     {
+                         reject("No is odd");
+                     }   
+                })
+            }
+
+            mypromise()
+            .catch(function(msg)
+            {
+                console.log("Done");
+            })
+
+            .then(function(ss)
+            {
+                ss(ss);
+                console.log(msg);
+            });
+
+            function ss(n1)
+            { 
+                var fact=1;
+                while(n1!=0)
+                {
+                     fact=fact*n1;
+                     n1--;
+                }
+                console.log("favtorial-"+fact);
+            }
+        </script>
+    </head>
+</html>

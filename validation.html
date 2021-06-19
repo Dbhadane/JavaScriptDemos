@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+                function valid()
+                   {
+                       var uid=document.a.f1.value;
+                       console.log(uid);
+
+                       if(uid.length>6 || uid.length<10)
+                       {
+                           alert("uid length should be in between 6-10");
+                           document.a.uid.value="";
+                           document.a.uid.focus();
+                           return;
+                       }
+                       var pwd=document.a.f2.value;
+                       if(pwd.length>6)
+                       {
+                           alert("pwd length should be in 6");
+                           document.a.pwd.value="";
+                           document.a.pwd.focus();
+                           return;
+                       }
+
+                       if(pwd=='1111111' && uid=='Dinu@12345')
+                       {
+                           alert("authentication suceescefull");
+                       }
+                   }
+                   
+        </script>
+       <title>VALIDATE USER</title>
+    </head>
+    <body>
+        <form name="a">
+            Enter UID<input type="text" name="f1"><br>
+            Password <input type="password" name="f2"><br>
+            <button onclick="valid()">Login</button>
+        </form>
+    </body>
+</html>

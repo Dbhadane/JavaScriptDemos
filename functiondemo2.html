@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script>
+          function add(n1,n2)
+            {
+                
+                var res=n1+n2;
+                alert("Addition-->" +res);
+            }
+        function add1(a=10,a1=20)
+        {
+            alert("Addition-->"+(a+a1));
+        }
+          var sum=0;
+        function num(...args)
+        {
+           
+            for(var i=0;i<args.length;i++)
+            {
+                sum += args[i];
+            }
+            console.log(sum);
+        }
+
+        
+        num(1,2,2,1);
+       
+    </script>
+</head>
+       <body>
+           <button onclick="add(10,110)">Add</button><br>
+           <button onclick="add()">Add 1</button><br>
+           
+       </body>
+</html>

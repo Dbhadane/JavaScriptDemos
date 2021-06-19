@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            let str=`DB`;
+            let str1='Hello '+`${str}`;
+            console.log(str1);
+
+            console.log("SubString");
+            
+            let a="     Hello Everyone i am Db      "; 
+            console.log(a.substr(1,8));
+
+            console.log("Removing whiteSpaces");
+            console.log(a.trim()); 
+            console.log(a.trimStart());
+            console.log(a.trimEnd());
+            console.log(a.toLowerCase());
+            console.log(a.toUpperCase());
+
+            console.log('Dinu'.localeCompare('Dinu'));
+            console.log('Cinu'.localeCompare('Dinu'));
+            console.log('Einu'.localeCompare('Dinu'));
+
+          let b=  a.replace('Hello','hi');
+            console.log(b);
+
+            let m='123'.padStart(8,'0');
+            console.log(m);
+            let c='1 2 3'.padEnd(8,'0');
+            console.log(c);
+
+            let s =c.split('');
+            console.log(s);
+
+            let sr="Dnyaneshwar";
+            let sr1="shwar";
+
+            console.log(sr.includes(sr1));
+
+
+
+        </script>
+    </head>
+</html>

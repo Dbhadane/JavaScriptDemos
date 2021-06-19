@@ -1,0 +1,85 @@
+<html>
+    <head>
+       <script>
+             function result()
+             {
+                 var fname=document.getElementById("b1").value;
+                 var en=parseInt(document.getElementById("b3").value);
+                 var hin=parseInt(document.getElementById("b4").value);
+                 var mar=parseInt(document.getElementById("b5").value);
+                 var total=en+hin+mar;
+                 var avg=total/3;
+                 var grade="";
+                 var status="";
+                 
+                 if(avg>80)
+                  {
+                      grade='A';
+                      status='FirstClass'
+                  }
+                  else if(avg>60 && avg<80)
+                  {
+                      grade='B';
+                      status='SecondClass';
+                  }
+                  else
+                    {
+                        grade='C';
+                        status='ThirdClass';
+                    }
+                  
+                     
+                  document.getElementById('t1').value=document.getElementById('b1').value;
+                  document.getElementById('t2').value=document.getElementById('b2').value;
+                  document.getElementById('t7').value=document.getElementById('b3').value;
+                  document.getElementById('t8').value=document.getElementById('b4').value;
+                  document.getElementById('t9').value=document.getElementById('b5').value;
+                  document.getElementById('t10').value=document.getElementById('b6').value;
+                  document.getElementById('t11').value=document.getElementById('b7').value;
+                  document.getElementById('t3').value=total;
+                  document.getElementById('t4').value=grade;
+                  document.getElementById('t5').value=avg;
+                  document.getElementById('t6').value=status;
+                  
+                        
+             }
+       </script>
+    </head>
+   <title>Student sheet</title> 
+   <body>
+    <fieldset style="width:600px">
+        <legend><b>Student Data</b></legend>
+        <table>
+              <tr><td>First Name</td><td><input type="text" id="b1"></td></tr>
+              <tr><td>Last Name</td><td><input type="text" id="b2"></td></tr>
+              <tr><td>English</td><td><input type="text" id="b3"></td></tr>
+              <tr><td>Hindi</td><td><input type="text" id="b4"></td></tr>
+              <tr><td>Math</td><td><input type="text" id="b5"></td></tr>
+              <tr><td>Sci</td><td><input type="text" id="b6"></td></tr>
+              <tr><td>Ict</td><td><input type="text" id="b7"></td></tr>
+              <tr><td><button onclick="result()">GetResult</button></td></tr>
+        </table>
+    </fieldset>
+    
+    <table border="1">
+        <tr><td colspan="11">Report Card</td></tr>
+        <tr><th>FName</th><th>lName</th><th>Eng</th><th>Hin</th><th>Math</th><th>Sci</th>
+            <th>Ict</th><th>Total</th><th>Grade</th><th>Avg</th><th>Remarks</th></tr>
+        <tr>
+        <td><input type="" id="t1"></td>
+        <td><input type="" id="t2" ></td>
+        <td><input type="" id="t7"></td>
+        <td><input type="" id="t8"></td>
+        <td><input type="" id="t9"></td>
+        <td><input type="" id="t10"></td>
+        <td><input type="" id="t11"></td>
+        <td><input type="" id="t3"></td>
+        <td><input type="" id="t4"></td>
+        <td><input type="" id="t5"></td>
+        <td><input type="" id="t6"></td>
+        </tr>
+    </table>
+    
+    
+   </body>
+</html>

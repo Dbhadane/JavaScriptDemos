@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            const myPromise = function(){
+                return new Promise(function(resolve,reject){
+
+                    console.log("even and Odd Example")
+
+                    var num=4;
+                    if(num%2==0)
+                    {
+                        resolve(success(num));
+                    }
+                    else{
+                        reject("number is odd")
+                    }
+
+                    
+                    
+                })
+            }
+
+            myPromise().then((success)=>{console.log("done")}).catch(msg1 =>{console.log(msg1)});
+
+            function success(num)
+            {
+                var fact=1;
+               while(num!=0)
+               {
+                   fact=fact*num;
+                   num--;
+               }
+              console.log("factorial of number "+fact)
+                console.log("number is even");
+            }
+        </script>
+    </head>
+</html>
